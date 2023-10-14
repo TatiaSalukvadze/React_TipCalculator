@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+https://tatiasalukvadze.github.io/React_TipCalculator/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
