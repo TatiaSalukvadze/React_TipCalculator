@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/React_TipCalculator/static/css/main.e43740c0.css",
-    "main.js": "/React_TipCalculator/static/js/main.3be1595a.js",
+    "main.css": "/React_TipCalculator/static/css/main.6305e79a.css",
+    "main.js": "/React_TipCalculator/static/js/main.3f5f6888.js",
     "static/media/logo.svg": "/React_TipCalculator/static/media/logo.3cc0528bd46321d63d85702006069614.svg",
+    "static/media/icon-dollar.svg": "/React_TipCalculator/static/media/icon-dollar.9f9be3534a9295a65957.svg",
     "static/media/icon-person.svg": "/React_TipCalculator/static/media/icon-person.65bfd20465dd1d2cb58c0b53e1160442.svg",
     "index.html": "/React_TipCalculator/index.html",
-    "main.e43740c0.css.map": "/React_TipCalculator/static/css/main.e43740c0.css.map",
-    "main.3be1595a.js.map": "/React_TipCalculator/static/js/main.3be1595a.js.map"
+    "main.6305e79a.css.map": "/React_TipCalculator/static/css/main.6305e79a.css.map",
+    "main.3f5f6888.js.map": "/React_TipCalculator/static/js/main.3f5f6888.js.map"
   },
   "entrypoints": [
-    "static/css/main.e43740c0.css",
-    "static/js/main.3be1595a.js"
+    "static/css/main.6305e79a.css",
+    "static/js/main.3f5f6888.js"
   ]
 }
