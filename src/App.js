@@ -5,7 +5,7 @@ import person from "./images/icon-person.svg";
 function App() {
   const [tanxa, setTanxa] = useState(0);
   const [tip, setTip] = useState(0);
-  const [pep, setPep] = useState(1);
+  const [pep, setPep] = useState(0);
   const [sul, setSul] = useState(0);
   const [newt, setNewt] = useState(0);
 
