@@ -33,6 +33,7 @@ label{
     font-weight: 700;
     margin-bottom:15px;
 }
+
 .bill,.people{
   width: 379px;
     height: 48px;
@@ -40,6 +41,18 @@ label{
     background: #F3F9FA;
     border:0;
     padding:10px;
+    background-repeat: no-repeat;
+      background-position: left 10px center;
+}
+.bill {
+  background-image: url('./images/icon-dollar.svg');
+}
+.people{
+  background-image: url('./images/icon-person.svg');
+}
+
+::placeholder {
+  text-align: right;
 }
 .bill:hover,.people:hover{
 border: 2px solid #26C2AE;
@@ -125,6 +138,24 @@ width: 333px;
   background: #9FE8DF;
   color: #00474B;
   cursor: pointer;
+}
+
+.error{
+  color: #E17457;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 700;
+    /* display: none; */
+}
+/* .show{
+  display:block;
+} */
+/* .error:not(.show){
+    display:none;
+} */
+.forer{
+  display:flex;
+  justify-content: space-between;
 }
 @media (max-width:908px){
   form{

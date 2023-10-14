@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import logo from "./images/logo.svg";
 import person from "./images/icon-person.svg";
 function App() {
@@ -8,6 +8,9 @@ function App() {
   const [pep, setPep] = useState(1);
   const [sul, setSul] = useState(0);
   const [newt, setNewt] = useState(0);
+
+  const error = useRef(null);
+  const pepinp = useRef(null);
 
   const handleChange = (event) => setTanxa(event.target.value);
   const handleChange1 = (event) => setPep(event.target.value);
@@ -18,6 +21,15 @@ function App() {
       setSul((Number(tanxa) / pep + newt).toFixed(2));
     }
   }, [tanxa, tip, pep]);
+  useEffect(() => {
+    if (pep[0] === "0") {
+      error.current.innerHTML = "Can’t be zero";
+      pepinp.current.style.border = " 2px solid #E17052";
+    } else {
+      error.current.innerHTML = "";
+      pepinp.current.style.border = " 0";
+    }
+  }, [pep]);
 
   return (
     <div className="app">
@@ -30,7 +42,7 @@ function App() {
             <input
               type="text"
               name="inp"
-              placeholder="$"
+              placeholder="0"
               onChange={handleChange}
               className="bill"
             />
@@ -44,19 +56,19 @@ function App() {
               <Tip val={25} setT={setTip} />
               <Tip val={50} setT={setTip} />
             </div>
-            <label htmlFor="npep">Number of People</label>
+            <label htmlFor="npep" className="forer">
+              <p>Number of People</p>{" "}
+              <span className="error" ref={error}></span>
+            </label>
 
             <input
               type="number"
               name="npep"
-              placeholder="1"
+              placeholder="0"
               onChange={handleChange1}
               className="people"
+              ref={pepinp}
             />
-
-            {/* <button name="data" type="button" onClick={() => calc()}>
-              Submit
-            </button> */}
           </div>
           <div className="second">
             <div className="box">
